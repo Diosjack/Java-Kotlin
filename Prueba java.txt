@@ -1,0 +1,135 @@
+import java.util.Scanner;
+
+ public class PruebaGrande {
+	public static void main (String args[]){
+		Scanner in = new Scanner(System.in);
+		String Nombre = ("");
+		int Num1 = 0, Num2 = 0, Resu = 0;
+		int Num3 = 0, Num4 = 0, Resu2 = 0;
+		int Num5 = 0, Num6 = 0, Resu3 = 0;
+		int Num7 = 0, Num8 = 0, Resu4 = 0;
+		int Operacion = 0;
+		int Equi = 2;
+		
+		System.out.println("----------------------------------");
+		System.out.println("");
+		System.out.println("Este programa es de Erick");
+		System.out.println("Calculadora Normal");
+		System.out.println("Cualquier donacion a paypal.me/deahcf");
+		System.out.println("");
+		System.out.println("----------------------------------");
+		System.out.println("----------------------------------");
+		System.out.println("Cual es tu nombre?");
+		Nombre = in.nextLine();
+		System.out.println("----------------------------------");
+		
+		System.out.println("");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		System.out.println("Hey "+ Nombre);
+		System.out.println("Si pones 1 es suma, si pones 2 es resta, si pones 3 es multiplicacion y si pones 4 es division.");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		Operacion = in.nextInt();
+		
+		if (Operacion == 1) {
+		System.out.println("Estas por Eligir Suma si es correcto pon 1 y si te equivocaste pon 0");
+		Equi = in.nextInt();
+		if (Equi == 1){
+			System.out.println("Dame tu primer numero");
+			Num1 = in.nextInt();
+			System.out.println("Dame tu Segundo numero");
+			Num2 = in.nextInt();
+			Resu = Num1 + Num2;
+			System.out.println("+----------------------------------+");
+			System.out.println("Hey "+ Nombre);
+			System.out.println("La suma total es de: "+ Resu);
+			System.out.println("+----------------------------------+");
+			}else if (Equi == 0){
+		     System.out.println("");
+		     System.out.println("--------------------------------------------------------------------------------------------------------------");
+		     System.out.println("Hey "+ Nombre);
+		     System.out.println("Si pones 2 es resta, si pones 3 es multiplicacion y si pones 4 es division.");
+		     System.out.println("--------------------------------------------------------------------------------------------------------------");
+		     Operacion = in.nextInt();
+		  }
+		}
+		if (Operacion == 2) {
+			System.out.println("Estas por Eligir Resta si es correcto pon 1 y si te equivocaste pon 0");
+			Equi = in.nextInt();
+		if (Equi == 1){
+			System.out.println("Dame tu primer numero");
+			Num3 = in.nextInt();
+			System.out.println("Dame tu Segundo numero");
+			Num4 = in.nextInt();
+			Resu2 = Num3 - Num4;
+			System.out.println("_----------------------------------_");
+			System.out.println("Hey "+ Nombre);
+			System.out.println("La resta total es de: "+ Resu2);
+			System.out.println("_----------------------------------_");
+		 }	else if (Equi == 0){
+	    System.out.println("");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		System.out.println("Hey "+ Nombre);
+		System.out.println("Si pones 1 es suma, si pones 3 es multiplicacion y si pones 4 es division.");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		Operacion = in.nextInt();
+		 }
+		}
+		if (Operacion == 3){
+			System.out.println("Estas por Eligir multiplicacion si es correcto pon 1 y si te equivocaste pon 0");
+			Equi = in.nextInt();
+			if (Equi == 1){
+			System.out.println("Dame tu primer numero");
+			Num5 = in.nextInt();
+			System.out.println("Dame tu Segundo numero");
+			Num6 = in.nextInt();
+			Resu3 = Num5 * Num6;
+			System.out.println("*----------------------------------*");
+			System.out.println("Hey "+ Nombre);
+			System.out.println("La multiplicacion total es de: "+ Resu3);
+			System.out.println("*----------------------------------*");
+			}else if (Equi == 0){
+		System.out.println("");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		System.out.println("Hey "+ Nombre);
+		System.out.println("Si pones 1 es suma, si pones 2 es resta y si pones 4 es divicion.");
+		System.out.println("--------------------------------------------------------------------------------------------------------------");
+		Operacion = in.nextInt();
+			}	
+		}
+		if (Operacion == 4){
+			System.out.println("Estas por Eligir multiplicacion si es correcto pon 1 y si te equivocaste pon 0");
+			Equi = in.nextInt();
+			if (Equi == 1){
+			System.out.println("Dame tu primer numero");
+			Num7 = in.nextInt();
+			System.out.println("Dame tu Segundo numero");
+			Num8 = in.nextInt();
+			Resu4 = Num7 / Num8;
+			System.out.println("/----------------------------------/");
+			System.out.println("Hey "+ Nombre);
+			System.out.println("La Division total es de: "+ Resu4);
+			System.out.println("/----------------------------------/");
+			}else if (Equi == 0){
+		     System.out.println("");
+		     System.out.println("--------------------------------------------------------------------------------------------------------------");
+		     System.out.println("Hey "+ Nombre);
+		     System.out.println("Si pones 1 es suma, si pones 2 es resta y si pones 3 es multiplicacion.");
+		     System.out.println("--------------------------------------------------------------------------------------------------------------");
+		     Operacion = in.nextInt();
+			}
+		}
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("----------------------------------");
+		System.out.println("");
+		System.out.println("Este programa es de Erick");
+		System.out.println("Gracias por usar nuestro programa");
+		System.out.println("Cualquier donacion a paypal.me/deahcf");
+		System.out.println("");
+		System.out.println("----------------------------------");
+    }
+}
